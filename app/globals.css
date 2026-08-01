@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: var(--font-manrope);
+  --font-body: var(--font-manrope);
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@layer base {
+  * {
+    @apply border-steel-200;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-charcoal-800 font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+  }
+
+  ::selection {
+    @apply bg-copper-500 text-white;
+  }
+
+  :focus-visible {
+    outline: 2px solid #c1642f;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Eyebrow: a datasheet-style field label, tracked wide, mono */
+  
+
+
+  /* Spec label: small mono caption used on data/number callouts */
+  .spec-label {
+    @apply font-mono text-[11px] uppercase tracking-widest2 text-steel-500;
+  }
+
+  /* Corner-bracket card frame, referencing technical drawing registration marks */
+  .drawing-frame {
+    position: relative;
+  }
+
+  .drawing-frame::before,
+  .drawing-frame::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-color: #ff6a1f;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .drawing-frame::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+  }
+
+  .drawing-frame::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+
+  .drawing-frame:hover::before,
+  .drawing-frame:hover::after {
+    opacity: 1;
+  }
+
+  .schematic-bg {
+    background-image: var(--tw-gradient-schematic, none);
+  }
+
+  .section-pad {
+    @apply py-24 md:py-32;
+  }
+}
