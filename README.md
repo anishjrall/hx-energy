@@ -45,19 +45,3 @@ lib/constants.ts      all site copy/data (sourced from the client's
 types/                shared TypeScript types
 hooks/                useScrollPosition, useCountUp
 ```
-
-## Before launch
-
-1. **Images** \u2014 every photo currently points to royalty-free Unsplash
-   placeholders via `next/image` remote patterns. Replace every URL in
-   `lib/constants.ts` and section components with the client's own
-   commissioned photography (plant rooms, installed systems, leadership
-   headshots) \u2014 generic stock undermines the trust the brief asks for.
-2. **Testimonials** \u2014 `components/sections/Testimonials.tsx` contains
-   clearly-marked placeholder quotes. Replace with verified, attributable
-   client feedback before launch.
-3. **Contact form** \u2014 `components/sections/Contact.tsx` currently
-   simulates submission. Wire `onSubmit` to a real API route or form
-   backend (e.g. a Next.js Route Handler emailing the sales inbox).
-4. **Domain & metadata** \u2014 update `SITE.url` in `lib/constants.ts` once a
-   production domain is confirmed, and add a real Open Graph image.
