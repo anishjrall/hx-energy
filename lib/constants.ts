@@ -177,68 +177,68 @@ export const INDUSTRIES: Industry[] = [
     description:
       "Centralised hot water, solar energy, water treatment and pumping for 5-star, 3-star and boutique properties.",
     image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
+      "/images/industries/hotels-resorts.jpg",
   },
   {
     name: "Hospitals & Healthcare",
     description:
       "Reliable 24\u00d77 hot water, pure water systems, STP and energy solutions with zero-compromise uptime.",
     image:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200&auto=format&fit=crop",
+      "/images/industries/hospitals-healthcare.jpg",
   },
   {
     name: "Universities & Campuses",
     description:
       "Large-capacity hostel hot water, rooftop solar, RO drinking water and STP for campus-scale populations.",
     image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop",
+      "/images/industries/universities-campuses.jpg",
   },
   {
     name: "Manufacturing & Industrial",
     description:
       "Process hot water, industrial RO, ETP and solar captive systems for textile, pharma and general manufacturing.",
     image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
+      "/images/industries/manufacturing-industrial.jpg",
   },
   {
     name: "Commercial Buildings",
     description:
       "Energy-efficient hot water, rooftop solar, water treatment and pumping for IT parks and mixed-use developments.",
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+      "/images/industries/commercial-buildings.jpg",
   },
   {
     name: "Government & Infrastructure",
     description:
       "Turnkey EPC for government departments, smart city projects and large public infrastructure.",
     image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop",
+      "/images/industries/government-infrastructure.jpg",
   },
   {
     name: "Dairy & Food Processing",
     description:
       "Hot water and steam systems, process water treatment and ETP tailored to stringent food-grade standards.",
     image:
-      "https://images.unsplash.com/photo-1587411768638-ec71b2d5c962?q=80&w=1200&auto=format&fit=crop",
+      "/images/industries/dairy-food-processing.jpg",
   },
   {
     name: "EPC Contractors & Consultants",
     description:
       "Supply, installation and commissioning support for MEP consultants, architects and project management teams.",
     image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
+      "/images/industries/epc-contractors.jpg",
   },
 ];
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-  { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop", alt: "Heat pump plant room installation", category: "Heat Pumps" },
-  { src: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?q=80&w=1000&auto=format&fit=crop", alt: "RO membrane skid", category: "Water Treatment" },
-  { src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000&auto=format&fit=crop", alt: "Rooftop solar PV array over commercial building", category: "Solar PV" },
-  { src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000&auto=format&fit=crop", alt: "Ground mounted solar plant", category: "Solar PV" },
-  { src: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1000&auto=format&fit=crop", alt: "Water softener vessel bank", category: "Water Treatment" },
-  { src: "https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?q=80&w=1000&auto=format&fit=crop", alt: "Sewage treatment plant clarifier", category: "Water Treatment" },
-  { src: "https://images.unsplash.com/photo-1581094651181-35942459ef62?q=80&w=1000&auto=format&fit=crop", alt: "Industrial pump room piping", category: "Pumping" },
-  { src: "https://images.unsplash.com/photo-1580983555102-4c211c2b478a?q=80&w=1000&auto=format&fit=crop", alt: "Engineers reviewing site drawings", category: "EPC" },
+  { src: "/images/gallary/heat-pump.jpg", alt: "Heat pump plant room installation", category: "Heat Pumps" },
+  { src: "/images/gallary/ro-water-treatment.jpg", alt: "RO membrane skid", category: "Water Treatment" },
+  { src: "/images/gallary/solar-rooftop.jpg", alt: "Rooftop solar PV array over commercial building", category: "Solar PV" },
+  { src: "/images/gallary/solar-ground-mounted.jpg", alt: "Ground mounted solar plant", category: "Solar PV" },
+  { src: "/images/gallary/water-softener.jpg", alt: "Water softener vessel bank", category: "Water Treatment" },
+  { src: "/images/gallary/stp.jpg", alt: "Sewage treatment plant clarifier", category: "Water Treatment" },
+  { src: "/images/gallary/pump-room.jpg", alt: "Industrial pump room piping", category: "Pumping" },
+  { src: "/images/gallary/epc-engineers.jpg", alt: "Engineers reviewing site drawings", category: "EPC" },
 ];
 
 export const LEADERSHIP: TeamMember[] = [
@@ -247,25 +247,15 @@ export const LEADERSHIP: TeamMember[] = [
     role: "Founder & Managing Director",
     bio: "Leads corporate strategy, project execution, operations and innovation \u2014 driving HX Energy's long-term growth roadmap with a strong engineering foundation.",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+      "/images/team/laxman-biradar.webp",
   },
   {
     name: "Srinath MS",
     role: "Co-Founder & Director",
     bio: "Leads business development, strategic partnerships and corporate expansion, building the long-term customer relationships that define HX Energy.",
     image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+      "/images/team/srinath-ms.webp",
   },
-];
-
-export const MANAGEMENT_TEAM: TeamMember[] = [
-  { name: "Vinay B M", role: "General Manager \u2014 Projects", image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=600&auto=format&fit=crop" },
-  { name: "Anil", role: "General Manager \u2014 Engineering & Technical", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop" },
-  { name: "Raghu", role: "General Manager \u2014 Sales & Marketing", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop" },
-  { name: "Arun", role: "General Manager \u2014 Service & AMC", image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?q=80&w=600&auto=format&fit=crop" },
-  { name: "Adv. Raghu", role: "Manager \u2014 Finance & Accounts", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" },
-  { name: "Diksha", role: "Manager \u2014 Quality Assurance & HSE", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop" },
-  { name: "Pooja", role: "Manager \u2014 Customer Support", image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop" },
 ];
 
 export const WHY_CHOOSE_US = [

@@ -23,7 +23,7 @@ export function Hero() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             // Swapped to a shipping port/industrial cranes image
-            backgroundImage: "url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2400&auto=format&fit=crop')"
+            backgroundImage: "url('/images/hero-industrial-facility.png')"
           }}
         />
         {/* Dark overlay to make white text readable, matching the reference image */}
