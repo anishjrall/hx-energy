@@ -108,13 +108,26 @@ export function Footer() {
               Contact
             </h3>
             <ul className="mt-6 space-y-4 text-[15px] font-medium text-gray-600">
-              <li className="leading-relaxed">{SITE.address}</li>
+              <li className="leading-relaxed">
+                <a href={SITE.mapUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-[#FF6B00]">
+                  {SITE.address}
+                  <span className="block">{SITE.landmark}</span>
+                </a>
+              </li>
               <li>
                 <a
                   href={`tel:${SITE.phone.replace(/\s/g, "")}`}
                   className="transition-colors hover:text-[#FF6B00]"
                 >
                   {SITE.phone}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${SITE.alternatePhone.replace(/\s/g, "")}`}
+                  className="transition-colors hover:text-[#FF6B00]"
+                >
+                  {SITE.alternatePhone}
                 </a>
               </li>
               <li>

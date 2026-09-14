@@ -53,15 +53,16 @@ export function Contact() {
           />
 
           <div className="mt-14 space-y-8">
-            <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="group flex items-start gap-5">
+            <div className="group flex items-start gap-5">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-gray-100 text-gray-400 transition-colors duration-300 group-hover:bg-[#FF6B00] group-hover:text-white">
                 <Phone className="h-5 w-5" />
               </span>
               <div className="pt-1">
                 <p className="text-xs font-bold uppercase tracking-widest text-gray-500">Phone</p>
-                <p className="mt-1 text-[15px] font-bold text-gray-900">{SITE.phone}</p>
+                <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="mt-1 block text-[15px] font-bold text-gray-900">{SITE.phone}</a>
+                <a href={`tel:${SITE.alternatePhone.replace(/\s/g, "")}`} className="block text-[15px] font-bold text-gray-900">{SITE.alternatePhone}</a>
               </div>
-            </a>
+            </div>
             
             <a href={`mailto:${SITE.email}`} className="group flex items-start gap-5">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-gray-100 text-gray-400 transition-colors duration-300 group-hover:bg-[#FF6B00] group-hover:text-white">
@@ -79,7 +80,10 @@ export function Contact() {
               </span>
               <div className="pt-1">
                 <p className="text-xs font-bold uppercase tracking-widest text-gray-500">Registered Office</p>
-                <p className="mt-1 max-w-xs text-[15px] leading-relaxed font-medium text-gray-900">{SITE.address}</p>
+                <a href={SITE.mapUrl} target="_blank" rel="noreferrer" className="mt-1 block max-w-xs text-[15px] leading-relaxed font-medium text-gray-900">
+                  {SITE.address}
+                  <span className="block">{SITE.landmark}</span>
+                </a>
               </div>
             </div>
           </div>

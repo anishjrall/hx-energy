@@ -34,9 +34,12 @@ export const SITE = {
   name: "HX Energy Systems",
   legalName: "HX Energy Systems Pvt. Ltd.",
   tagline: "Engineering Trust. Delivering Excellence.",
-  phone: "+91 73531 31310",
+  phone: "+91 83292 98004",
+  alternatePhone: "+91 73531 31310",
   email: "info@hxenergy.in",
-  address: "4th Main, 4th Cross, E & F Block, R.K. Nagar, Mysuru \u2013 570022, Karnataka, India",
+  address: "1088, 6th Main, E and F Block, Ramakrishna Nagar, Mysore 570022",
+  landmark: "Near Andolana Circle",
+  mapUrl: "https://www.google.com/maps?q=12.2840139,76.6165614&z=17&hl=en",
   url: "https://www.hxenergy.in",
 };
 
