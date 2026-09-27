@@ -48,12 +48,57 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE.url}/#organization`,
+      name: SITE.legalName,
+      url: SITE.url,
+      logo: `${SITE.url}/hx-energy-logo.png`,
+      email: SITE.email,
+      telephone: SITE.phone,
+      description: metadata.description,
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": `${SITE.url}/#localbusiness`,
+      name: SITE.legalName,
+      url: SITE.url,
+      image: `${SITE.url}/images/hero-industrial-facility.png`,
+      logo: `${SITE.url}/hx-energy-logo.png`,
+      telephone: SITE.phone,
+      email: SITE.email,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: SITE.address,
+        addressLocality: "Mysuru",
+        addressRegion: "Karnataka",
+        postalCode: "570022",
+        addressCountry: "IN",
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "India",
+      },
+      parentOrganization: {
+        "@id": `${SITE.url}/#organization`,
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={manrope.variable}>
       <body className="bg-paper text-charcoal-800">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-md focus:bg-copper-600 focus:px-4 focus:py-2 focus:text-white"
