@@ -40,12 +40,12 @@ export const SITE = {
   address: "1088, 6th Main, E and F Block, Ramakrishna Nagar, Mysore 570022",
   landmark: "Near Andolana Circle",
   mapUrl: "https://www.google.com/maps?q=12.2840139,76.6165614&z=17&hl=en",
-  url: "https://www.hxenergy.in",
+  url: "https://hxenergy.in",
 };
 
 export const NAV_LINKS: NavLink[] = [
   { label: "About", href: "#about" },
-  { label: "Products", href: "/products" },
+  { label: "Products", href: "#products" },
   { label: "Services", href: "#services" },
   { label: "Industries", href: "#industries" },
   { label: "Projects", href: "#gallery" },
@@ -249,15 +249,11 @@ export const LEADERSHIP: TeamMember[] = [
     name: "Laxman Biradar",
     role: "Founder & Managing Director",
     bio: "Leads corporate strategy, project execution, operations and innovation \u2014 driving HX Energy's long-term growth roadmap with a strong engineering foundation.",
-    image:
-      "/images/team/laxman-biradar.webp",
   },
   {
     name: "Srinath MS",
     role: "Co-Founder & Director",
     bio: "Leads business development, strategic partnerships and corporate expansion, building the long-term customer relationships that define HX Energy.",
-    image:
-      "/images/team/srinath-ms.webp",
   },
 ];
 

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -27,15 +26,16 @@ export function Leadership() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, delay: i * 0.1 }}
             >
-              {/* Removed rounded corners for a sharp, structural look */}
-              <div className="relative aspect-[4/5] overflow-hidden bg-gray-100 border border-gray-200">
-                <Image
-                  src={leader.image}
-                  alt={leader.name}
-                  fill
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                />
+              <div
+                aria-label={`${leader.name} profile`}
+                className="flex aspect-[4/5] items-center justify-center overflow-hidden border border-gray-200 bg-steel-100"
+              >
+                <span className="font-display text-7xl font-bold tracking-tight text-steel-400">
+                  {leader.name
+                    .split(" ")
+                    .map((part) => part[0])
+                    .join("")}
+                </span>
               </div>
               <h3 className="mt-6 text-2xl font-bold text-gray-900">{leader.name}</h3>
               <p className="mt-2 text-xs font-bold uppercase tracking-widest text-[#FF6B00]">

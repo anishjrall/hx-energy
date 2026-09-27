@@ -32,12 +32,16 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     locale: "en_IN",
     type: "website",
+    images: [{ url: "/images/hero-industrial-facility.png", alt: "HX Energy industrial facility" }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE.legalName} \u2014 Engineering Trust. Delivering Excellence.`,
     description:
       "End-to-end engineering across heat pumps, solar PV, water treatment, pumping and turnkey EPC.",
+  },
+  icons: {
+    icon: "/hx-energy-logo.png",
   },
   alternates: {
     canonical: SITE.url,

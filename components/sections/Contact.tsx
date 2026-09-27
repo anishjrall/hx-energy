@@ -20,13 +20,24 @@ export function Contact() {
   } = useForm<ContactFormValues>();
   const [state, setState] = useState<SubmitState>("idle");
 
-  const onSubmit = async (data: ContactFormValues) => {
+  const onSubmit = (data: ContactFormValues) => {
     setState("loading");
     try {
-      // Replace with the client's actual form endpoint / API route.
-      await new Promise((resolve, reject) =>
-        setTimeout(() => (data.email ? resolve(true) : reject()), 1200)
+      const subject = encodeURIComponent(`Website enquiry from ${data.name}`);
+      const body = encodeURIComponent(
+        [
+          `Name: ${data.name}`,
+          `Company: ${data.company}`,
+          `Phone: ${data.phone}`,
+          `Email: ${data.email}`,
+          `Service: ${data.service}`,
+          `Budget: ${data.budget || "Not specified"}`,
+          "",
+          "Project details:",
+          data.details,
+        ].join("\n")
       );
+      window.location.href = `mailto:${SITE.email}?subject=${subject}&body=${body}`;
       setState("success");
       reset();
     } catch {
@@ -208,7 +219,7 @@ export function Contact() {
 
           {state === "success" && (
             <p className="mt-5 flex items-center gap-2 text-sm font-medium text-green-700">
-              <CheckCircle2 className="h-5 w-5" /> Thanks &mdash; your enquiry has been received. We&rsquo;ll respond within 24 hours.
+              <CheckCircle2 className="h-5 w-5" /> Your email app should open with the enquiry ready to send. If it does not, email {SITE.email}.
             </p>
           )}
           {state === "error" && (

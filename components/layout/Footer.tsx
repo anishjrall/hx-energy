@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Linkedin, Facebook, Instagram } from "lucide-react";
 import { SITE, SERVICES, NAV_LINKS } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
 
@@ -41,19 +40,6 @@ export function Footer() {
               industrial and government clients.
             </p>
 
-            {/* Social Links */}
-            <div className="mt-8 flex items-center gap-3">
-              {[Linkedin, Facebook, Instagram].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  aria-label="Social link"
-                  className="flex h-10 w-10 items-center justify-center bg-gray-100 text-gray-500 transition-colors duration-300 hover:bg-[#FF6B00] hover:text-white"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Services */}
